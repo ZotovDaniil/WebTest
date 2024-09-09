@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.danjke99'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation 'com.codeborne:selenide-selenoid:7.4.2',
+            'com.github.javafaker:javafaker:1.0.2',
+            'org.selenide:selenide-selenoid:2.3.8',
+            "org.junit.jupiter:junit-jupiter:5.9.2",
+            "org.slf4j:slf4j-simple:2.0.6";
+}
+
+test {
+    useJUnitPlatform()
+}
